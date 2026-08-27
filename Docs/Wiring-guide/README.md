@@ -6,7 +6,7 @@ Complete wiring guide for the Automated Irrigation System (AIS) controller confi
 
 ## Hardware Overview & Pin Mapping
 
-This setup uses an Arduino Nano on terminal adapters, an 8-LED ring layout with **7 active LEDs** (each representing 24 hours for up to 168 hours / 7 days), a 4-button tactile interface using external 10k Ω pull-down resistors, and a 5V relay driving a 3V DC submersible pump. Power and ground are clean and modular using WAGO connectors.
+This setup uses an Arduino Nano on terminal adapters, an 8\7-LED ring layout with **7 active LEDs** (each representing 24 hours for up to 168 hours / 7 days), a 4-button tactile interface using external 10k Ω pull-down resistors, and a 5V relay driving a 3V DC submersible pump. Power and ground are clean and modular using WAGO connectors.
 
 ### Master Pinout Table
 
