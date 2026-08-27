@@ -6,7 +6,11 @@ Complete wiring guide for the Automated Irrigation System (AIS) controller confi
 
 ## Hardware Overview & Pin Mapping
 
-This setup uses an Arduino Nano on terminal adapters, an 8\7-LED ring layout with **7 active LEDs** (each representing 24 hours for up to 168 hours / 7 days), a 4-button tactile interface using external 10k Ω pull-down resistors, and a 5V relay driving a 3V DC submersible pump. Power and ground are clean and modular using WAGO connectors.
+*Insert full wiring schematic / circuit diagram here*
+
+This setup uses an Arduino Nano on terminal adapters, an 7-LED ring layout with **7 active LEDs** (each representing 24 hours for up to 168 hours / 7 days), a 4-button tactile interface using external 10k Ω pull-down resistors, and a 5V relay driving a 3V DC submersible pump. Power and ground are clean and modular using WAGO connectors.
+
+*Insert physical breadboard / prototype layout photo here*
 
 ### Master Pinout Table
 
@@ -22,6 +26,8 @@ This setup uses an Arduino Nano on terminal adapters, an 8\7-LED ring layout wit
 ---
 
 ## Power Distribution Architecture (WAGO Connectors)
+
+*Insert WAGO connector bus wiring close-up photo here*
 
 To keep enclosure wiring organized and modular, use 5 WAGO splicing connectors:
 
@@ -39,12 +45,16 @@ To keep enclosure wiring organized and modular, use 5 WAGO splicing connectors:
 
 ### 1. Control Buttons (**M**, **R**, **+**, **-**)
 
+*Insert button harness & resistor wiring diagram here*
+
 1. **5V Supply:** Connect one terminal of each of the 4 tactile switches directly to **WAGO #1** (5V Rail).
 2. **Signal Lines:** Connect the opposite terminal of each switch directly to its assigned Arduino Nano pin (`16`, `17`, `15`, `14`).
 3. **External Pull-Down Resistors:** Connect a **10k Ω resistor** from each Arduino signal pin (`16`, `17`, `15`, `14`) down to **WAGO #4** (Ground Rail). 
    * *Operation:* Pins rest naturally at `0V (LOW)` and go `5V (HIGH)` when pressed.
 
 ### 2. Status LED Array (7 Active LEDs @ 24 Hours Each)
+
+*Insert LED array front and back wiring detail photo here*
 
 1. **Anodes (+):** Connect the positive leg of each of the 7 active LEDs to Digital Pins `9` down to `3`. Place a **100 Ω current-limiting resistor** in series on each positive line.
 2. **Cathodes (-):** Solder/connect all 7 negative legs together and route them into **WAGO #3** (LED Ground Rail).
@@ -54,6 +64,8 @@ To keep enclosure wiring organized and modular, use 5 WAGO splicing connectors:
 
 ### 3. Relay Module & Pump Assembly
 
+*Insert relay board and pump connector image here*
+
 1. **Relay Logic:**
    * `VCC` $\rightarrow$ **WAGO #1** (5V Rail)
    * `GND` $\rightarrow$ **WAGO #5** (System Ground Rail)
@@ -62,3 +74,9 @@ To keep enclosure wiring organized and modular, use 5 WAGO splicing connectors:
    * Route positive power from **WAGO #2** into the relay's **COM (Common)** terminal.
    * Connect the pump's positive lead to the relay's **NO (Normally Open)** terminal.
    * Attach a **JST male/female pair** in line with the pump cable for easy disconnects, and route the pump's ground wire back into **WAGO #5**.
+
+---
+
+## Final Enclosure Assembly
+
+*Insert fully wired final assembly inside enclosure photo here*
