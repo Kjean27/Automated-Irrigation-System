@@ -4,7 +4,7 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
 
 ---
 
-## 1. Preparing the 3D Printed Parts + Soldering Components 
+## 1. Preparing the 3D Printed Parts 
 
 *Insert photo of printed Front Panel, Back Panel and Mechanical Hardware*
 
@@ -13,23 +13,26 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
    * Using a soldering iron set to ~220°C, press ten **M3 brass heat-set inserts** into the mounting  posts of the bottom front panel until flush.
 3. **Prep Button Openings:**
    * Test fit the 4 tactile buttons inside the Front Panel cutouts (**M**, **R**, **+**, **-**).
-   * If buttons s sand the sides of the button caps until they press smoothly with $0.3\text{mm}$ to $0.4\text{mm}$ clearance.
-
+   * If buttons fit too tight sand the edges of the cutouts. 
 ---
 
 ## 2. Electronics Harnessing & WAGO Power Rail Setup
 
-*Insert photo of completed WAGO wire harness and terminal adapter here*
+*Insert photo of completed WAGOs, Terminal Adapter, Arduino Nano, LEDs*
 
-1. **Mount Microcontroller:** Mount the Arduino Nano into the terminal adapter board for secure screw-terminal wiring.
-2. **Setup WAGO Power Blocks:**
+1.**Solder Microcontroller Pins:** Take the pins that came with the Arduino Nano (only if unwelded) and solder them to their designated pins.
+2. **Mount Microcontroller:** Mount the Arduino Nano into the terminal adapter board for secure screw-terminal wiring.
+3. **Setup WAGO Power Blocks:**
    * Prepare **WAGO #1 & #2** for 5V distribution.
+   * * 
+
+
    * Prepare **WAGO #3, #4 & #5** for ground distribution.
-3. **Wire Buttons & Resistors:**
+4. **Wire Buttons & Resistors:**
    * Connect 5V to one side of each tactile button via WAGO #1.
    * Attach signal lines to Pins `16`, `17`, `15`, and `14`.
    * Wire a **10k Ω pull-down resistor** from each signal pin to WAGO #4 (Ground).
-4. **Wire LED Array:**
+5. **Wire LED Array:**
    * Place a **100 Ω resistor** in series with the positive lead (anode) of each of the 7 active LEDs and connect them to Pins `9` down to `3`.
    * Route all negative leads (cathodes) into WAGO #3 (Ground).
 
