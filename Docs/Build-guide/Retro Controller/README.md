@@ -13,7 +13,8 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
    * Using a soldering iron set to ~220°C, press ten **M3 brass heat-set inserts** into the mounting  posts of the bottom front panel until flush.
 3. **Prep Button Openings:**
    * Test fit the 4 tactile buttons inside the Front Panel cutouts (**M**, **R**, **+**, **-**).
-   * If buttons fit too tight sand the edges of the cutouts. 
+   * If buttons fit too tight sand the edges of the cutouts.
+   * Test fit the LED’s in each cutout whole, and sand if too tight.
 ---
 
 ## 2. Electronics Harnessing & WAGO Power Rail Setup
@@ -23,16 +24,42 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
 1.**Solder Microcontroller Pins:** Take the pins that came with the Arduino Nano (only if unwelded) and solder them to their designated pins.
 2. **Mount Microcontroller:** Mount the Arduino Nano into the terminal adapter board for secure screw-terminal wiring.
 3. **Setup WAGO Power Blocks:**
-   * Prepare **WAGO #1 & #2** for 5V distribution.
-   * * 
+   * Prepare **WAGO #1 - 5 way connection & #2 - 2 way connection** for 5V distribution.
+   * * (If your using jumper cables skip) Cut a wire and strip both ends, and twist the strands of both sides.
 
+*Insert photo of strip wire with twist ends*
+
+   * *Unscrew the 5V channel with a flat head, insert a twisted end into the terminal, and retighten.
+
+*Insert photo of strip cable with twist ends*
+
+   * *Attach the other end to the far left of the WAGO with 5 way connectors (lift the latch before inserting the wire and close once inserted to ensure proper connection).
+
+*Insert photo of WAGO connection*
+
+   * *Cut another smaller wire and strip both ends, and insert the wire to the far right of the 5 way WAGO and the other end in the far left of the 2 way WAGO. 
+
+*Insert photo of WAGO connection*
 
    * Prepare **WAGO #3, #4 & #5** for ground distribution.
+   * *Cut a wire similar in size to the power line and attach the GND Terminal.
+     
+*Insert photo of connection to GND*
+
+   * *Connect the other end to one of the 3 way Connector WAGOs’.
+   * *Daisy chain them together by cutting and striping smaller wires.
+
+*Insert a photo of the daisy chained WAGO’s*
+     
+
 4. **Wire Buttons & Resistors:**
-   * Connect 5V to one side of each tactile button via WAGO #1.
+   * Fit the tactile buttons into the Front Panel.
+* Insert photo of the buttons fit in the cutouts.
+   * 
+   * Cut 4 wires at similar lengths, strip both ends, and twist the ends
    * Attach signal lines to Pins `16`, `17`, `15`, and `14`.
    * Wire a **10k Ω pull-down resistor** from each signal pin to WAGO #4 (Ground).
-5. **Wire LED Array:**
+4. **Wire LED Array:**
    * Place a **100 Ω resistor** in series with the positive lead (anode) of each of the 7 active LEDs and connect them to Pins `9` down to `3`.
    * Route all negative leads (cathodes) into WAGO #3 (Ground).
 
