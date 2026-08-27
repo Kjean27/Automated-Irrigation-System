@@ -52,3 +52,12 @@ Every part required to assemble the Automated Irrigation System (AIS) is catalog
 | **Orbit 1/4" Barbed Drip Irrigation Elbows** | 20 Pack | 90° routing around corners and pot rims |
 | **Orbit 1/4" Barbed Drip Irrigation End Caps** | 25 Pack | Seals dead ends on tubing runs |
 | **Raindrip Spot Drip Mini In-Line Emitters** | 10 Pack | 0.5 GPH emitters positioned directly at plant soil |
+
+---
+
+## Other
+
+| Item | Qty | Usage |
+| :--- | :--- | :--- |
+| **Soldering Iron)** | 1 | Used to connect wires, leds, and buttons |
+| **Screwdriver Set** | 1 | Need a Hex bit or phillips head |
