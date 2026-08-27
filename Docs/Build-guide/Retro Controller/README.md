@@ -4,16 +4,16 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
 
 ---
 
-## 1. Preparing the 3D Printed Parts + Screws
+## 1. Preparing the 3D Printed Parts + Soldering Components 
 
-*Insert photo of printed Front Panel, and button caps here*
+*Insert photo of printed Front Panel, Back Panel and Mechanical Hardware*
 
-1. **Remove Support Material:** Clean off any 3D printing supports from the inside of the top cap and bottom enclosure shell.
+1. **Remove Support Material:** Clean off any 3D printing supports from the inside of the Front Panel and Back Panel.
 2. **Install Heat-Set Inserts:** 
-   * Using a soldering iron set to ~220°C, press four **M3 brass heat-set inserts** into the mounting corner posts of the bottom shell until flush.
+   * Using a soldering iron set to ~220°C, press ten **M3 brass heat-set inserts** into the mounting  posts of the bottom front panel until flush.
 3. **Prep Button Openings:**
-   * Test fit the 4 printed button caps inside the top shell cutouts (**M**, **R**, **+**, **-**).
-   * If buttons bind, lightly sand the sides of the button caps until they press smoothly with $0.3\text{mm}$ to $0.4\text{mm}$ clearance.
+   * Test fit the 4 tactile buttons inside the Front Panel cutouts (**M**, **R**, **+**, **-**).
+   * If buttons s sand the sides of the button caps until they press smoothly with $0.3\text{mm}$ to $0.4\text{mm}$ clearance.
 
 ---
 
