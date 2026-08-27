@@ -19,7 +19,9 @@ Designed for custom enclosures featuring a 4-button pad (**M**, **R**, **+**, **
 | **-** Button (Decrease) | `15` | Input | Decreases interval (-6h) |
 | **+** Button (Increase) | `14` | Input | Increases interval (+6h) |
 | **Pump Relay** | `10` | Output | Active-HIGH relay control |
-| **LED Array** | `9–3` | Output | Pins 9 down to 2 sequentially |
+| **LED Array** | `9–3` | Output | Pins 9 down to 3 sequentially |
+
+![Controller Button Explanation] (path/to/image.jpg)
 
 ## Setup & Installation
 
