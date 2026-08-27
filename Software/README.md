@@ -26,7 +26,7 @@ The software listens for four active-low / active-high inputs:
 
 ## Output Behavior
 
-* **LED Indicator Ring:** Updates dynamically when **+** or **-** is pressed. Illuminates 1 to 8 LEDs sequentially (each LED represents a day  interval step).
+* **LED Indicator Ring:** Updates dynamically when **+** or **-** is pressed. Illuminates 1 to 7 LEDs sequentially (each LED represents a day  interval step).
 * **Pump Execution:** Pulls Pin `10` HIGH for exactly 1 minute  when the schedule expires or when **M** is activated. All 7 status LEDs flash simultaneously while the pump is active.
 
 ---
