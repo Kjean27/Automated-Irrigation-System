@@ -1,4 +1,4 @@
 # Build_Guides 
 
-- **irrigation System/** - Build guide with for 
-- **Retro Controller/** - Wiring instructions
+- **Irrigation System/** - 
+- **Retro Controller/** - 
