@@ -37,26 +37,33 @@ Step-by-step assembly guide for building the Automated Irrigation System (AIS) r
 
 *Insert photo of WAGO connection*
 
-   * *Cut another smaller wire and strip both ends, and insert the wire to the far right of the 5 way WAGO and the other end in the far left of the 2 way WAGO. 
+   * * Cut another smaller wire and strip both ends, and insert the wire to the far right of the 5 way WAGO and the other end in the far left of the 2 way WAGO. 
 
 *Insert photo of WAGO connection*
 
    * Prepare **WAGO #3, #4 & #5** for ground distribution.
-   * *Cut a wire similar in size to the power line and attach the GND Terminal.
+   * * Cut a wire similar in size to the power line and attach the GND Terminal.
      
 *Insert photo of connection to GND*
 
-   * *Connect the other end to one of the 3 way Connector WAGOs’.
-   * *Daisy chain them together by cutting and striping smaller wires.
+   * * Connect the other end to one of the 3 way Connector WAGOs’.
+   * * Daisy chain them together by cutting and striping smaller wires.
 
 *Insert a photo of the daisy chained WAGO’s*
      
 
 4. **Wire Buttons & Resistors:**
    * Fit the tactile buttons into the Front Panel.
+   
 * Insert photo of the buttons fit in the cutouts.
-   * 
-   * Cut 4 wires at similar lengths, strip both ends, and twist the ends
+
+
+   * Cut 4 wires at similar lengths, strip both ends, and twist the ends. (Color code the wires or label the WAGO Channels with a sharpie)
+* Insert a photo of the wires cut
+
+   * Put the wires twisted ends of in the power WAGO line
+ * Insert a photo of the wires cut and inserted in the power WAGO
+
    * Attach signal lines to Pins `16`, `17`, `15`, and `14`.
    * Wire a **10k Ω pull-down resistor** from each signal pin to WAGO #4 (Ground).
 4. **Wire LED Array:**
